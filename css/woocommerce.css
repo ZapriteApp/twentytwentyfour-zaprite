@@ -1,6 +1,37 @@
+/*--------------------------------------------------------------
+# 	CHECKOUT
+--------------------------------------------------------------*/
+
 #add_payment_method #payment,
 .woocommerce-cart #payment,
 .woocommerce-checkout #payment {
-	background: var(--lighter);
-	border-radius: 5px;
+	background: var(--light);
+	border-radius: var(--radius-m);
+}
+
+#add_payment_method #payment div.payment_box,
+.woocommerce-cart #payment div.payment_box,
+.woocommerce-checkout #payment div.payment_box {
+	border-radius: var(--radius-s);
+	background-color: var(--lighter);
+	color: var(--grey);
+}
+
+#add_payment_method #payment div.payment_box::before,
+.woocommerce-cart #payment div.payment_box::before,
+.woocommerce-checkout #payment div.payment_box::before {
+	border: 1em solid var(--lighter);
+	border-top-color: transparent;
+	border-right-color: transparent;
+	border-left-color: transparent;
+}
+
+#add_payment_method #payment div.payment_box p:last-child,
+.woocommerce-cart #payment div.payment_box p:last-child,
+.woocommerce-checkout #payment div.payment_box p:last-child {
+	margin: 0;
+}
+
+li.wc_payment_method.payment_method_zaprite > label {
+	font-weight: 700;
 }
