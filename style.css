@@ -1,0 +1,60 @@
+/*
+Theme Name:   Twenty Twenty Four Zaprite
+Theme URI:    http://woo.zaprite.dev/
+Description:  Twenty Twenty Four Child Theme
+Author:       Zaprite
+Author URI:   http://zaprite.com
+Template:     twentytwentyfour
+Version:      0.0.5
+License:      GNU General Public License v2 or later
+License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+Text Domain:  twentytwentyfourzaprite
+*/
+
+/*--------------------------------------------------------------
+# 	VARIABLES
+--------------------------------------------------------------*/
+:root {
+	--primary: rgb(32, 201, 151);
+	--secondary: rgb(22, 30, 46);
+	--tertiary: rgb(35, 120, 225);
+
+	--lighter: rgb(249, 250, 251);
+	--light: rgb(239, 240, 241);
+	--grey: rgb(173, 175, 190);
+	--charcoal: rgb(103, 117, 124);
+	--dark: rgb(22, 30, 46);
+	--darker: rgb(12, 20, 36);
+
+	--border: rgb(229, 230, 231);
+
+	--success: var(--primary);
+	--confirm: rgb(32, 201, 151);
+	--warning: rgb(255, 193, 55);
+	--warningBg: rgba(255, 193, 55, 0.15);
+	--danger: rgb(230, 56, 109);
+	--dangerBg: rgba(230, 56, 109, 0.15);
+	--message: var(--tertiary);
+	--messageBg: rgba(35, 120, 225, 0.15);
+
+	--font-headline: 'canada-type-gibson', Helvetica, sans-serif;
+	--font-body: 'canada-type-gibson', Helvetica, sans-serif;
+
+	--page-width: 1280px;
+	--content-width: 960px;
+	--radius-xs: 2px;
+	--radius-s: 4px;
+	--radius-m: 8px;
+	--radius-l: 12px;
+	--radius-xl: 16px;
+	--box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.25);
+
+	--card-shadow-soft: 0 0.25em 1em rgb(0, 0, 0, 0.1);
+	--card-shadow-hard: 0 0.125em 0.125em rgb(0, 0, 0, 0.2);
+
+	--box-padding: 1.5em;
+	--gap: calc(var(--box-padding) / 2);
+
+	--transition: all 400ms ease;
+}
