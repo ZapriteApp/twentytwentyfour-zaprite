@@ -5,7 +5,7 @@
 
 if ( ! defined( '_S_VERSION' ) ) {
 	// Replace the version number of the theme on each release.
-	define( '_S_VERSION', '0.0.5' );
+	define( '_S_VERSION', '0.0.7' );
 }
 
 add_action( 'wp_enqueue_scripts', 'my_theme_enqueue_styles' );
@@ -23,7 +23,7 @@ function my_theme_enqueue_styles() {
 		$theme->get( 'Version' ) // This only works if you have Version defined in the style header.
 	);
 	wp_enqueue_style( 'woo-styles', 
-		get_stylesheet_uri() . '/css/woocommerce.css', 
+		get_stylesheet_directory_uri() . '/css/woocommerce.css', 
 		array(), 
 		_S_VERSION 
 	);
